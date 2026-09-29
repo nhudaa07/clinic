@@ -559,7 +559,7 @@ $appointment_stmt->close();
 
 
             <a
-                href="<?= BASE_URL ?>appointment/appointment.php"
+                href="<?= BASE_URL ?>doctor/doctor.php"
                 class="dashboard-btn"
             >
 
@@ -597,7 +597,7 @@ $appointment_stmt->close();
 
 
             <a
-                href="<?= BASE_URL ?>appointment/appointment.php"
+                href="<?= BASE_URL ?>appointment.php"
                 class="view-all"
             >
 
