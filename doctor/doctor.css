@@ -1,0 +1,231 @@
+/* =========================
+   Doctors Page
+========================= */
+
+.doctors-page {
+    background: #f7faff;
+    min-height: 100vh;
+}
+
+
+/* =========================
+   Hero
+========================= */
+
+.doctors-hero {
+    background: #ffffff;
+    text-align: center;
+    padding: 60px 20px 50px;
+}
+
+.doctors-hero h1 {
+    margin: 0 0 10px;
+    font-size: 40px;
+    font-weight: 700;
+    color: #172b4d;
+}
+
+.doctors-hero p {
+    margin: 0;
+    font-size: 16px;
+    color: #718096;
+}
+
+
+/* =========================
+   Doctors Section
+========================= */
+
+.doctors-section {
+    padding: 55px 0 80px;
+}
+
+.doctors-grid {
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    gap: 28px;
+    align-items: start;
+}
+
+
+/* =========================
+   Doctor Card
+========================= */
+
+.doctors-grid .doctor-card {
+    display: block !important;
+    width: 100%;
+    min-width: 0;
+    background: #ffffff;
+    border: 1px solid #e5edf5;
+    border-radius: 18px;
+    overflow: hidden;
+    box-sizing: border-box;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.doctors-grid .doctor-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 35px rgba(30, 70, 110, 0.12);
+}
+
+
+/* =========================
+   Doctor Image
+========================= */
+
+.doctors-grid .doctor-image {
+    width: 100%;
+    height: 280px;
+    overflow: hidden;
+    background: #edf4fa;
+}
+
+.doctors-grid .doctor-image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+
+/* =========================
+   Doctor Information
+========================= */
+
+.doctors-grid .doctor-info {
+    display: block !important;
+    width: 100%;
+    padding: 24px;
+    box-sizing: border-box;
+}
+
+
+/* Doctor Name */
+
+.doctors-grid .doctor-info h3 {
+    display: block;
+    width: 100%;
+    margin: 0 0 7px;
+    font-size: 21px;
+    line-height: 1.35;
+    font-weight: 700;
+    color: #172b4d;
+}
+
+
+/* Specialization */
+
+.doctors-grid .doctor-info .specialization {
+    display: block;
+    width: 100%;
+    margin: 0 0 8px;
+    font-size: 15px;
+    line-height: 1.5;
+    font-weight: 600;
+    color: #2f80ed;
+}
+
+
+/* Experience */
+
+.doctors-grid .doctor-info .experience {
+    display: block;
+    width: 100%;
+    margin: 0 0 16px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #7a8797;
+}
+
+
+/* Description */
+
+.doctors-grid .doctor-info .doctor-description {
+    display: block;
+    width: 100%;
+    margin: 0 0 22px;
+    min-height: 0;
+    font-size: 14px;
+    line-height: 1.7;
+    color: #68778a;
+}
+
+
+/* =========================
+   Appointment Button
+========================= */
+
+.doctors-grid .doctor-info .appointment-btn {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px 18px;
+    border-radius: 8px;
+
+    background: #2f80ed;
+    color: #ffffff;
+
+    text-align: center;
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    transition: background 0.25s ease, transform 0.25s ease;
+}
+
+.doctors-grid .doctor-info .appointment-btn:hover {
+    background: #216bd0;
+    transform: translateY(-1px);
+}
+
+
+/* =========================
+   Tablet
+========================= */
+
+@media (max-width: 992px) {
+
+    .doctors-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    }
+
+    .doctors-hero h1 {
+        font-size: 36px;
+    }
+}
+
+
+/* =========================
+   Mobile
+========================= */
+
+@media (max-width: 650px) {
+
+    .doctors-hero {
+        padding: 45px 20px 40px;
+    }
+
+    .doctors-hero h1 {
+        font-size: 30px;
+    }
+
+    .doctors-hero p {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    .doctors-section {
+        padding: 40px 20px 60px;
+    }
+
+    .doctors-grid {
+        grid-template-columns: 1fr !important;
+        gap: 22px;
+    }
+
+    .doctors-grid .doctor-image {
+        height: 300px;
+    }
+}
