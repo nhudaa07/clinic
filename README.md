@@ -27,49 +27,6 @@ MediBook is a web-based Clinic Appointment Management System built to streamline
 
 ---
 
-## 📁 Project Folder Structure
-
-
-clinic-main/
-│
-├── dashboard/
-│   └── admin_dashboard.php      # Admin control panel for doctor & appointment management
-│
-├── database/
-│   └── clinic_db.sql            # MySQL database script with structure and sample data
-│
-├── doctor/
-│   ├── doctor.css               # Styles for doctor page
-│   └── doctor.php               # Doctor directory page
-│
-├── img/
-│   └── d1.png                   # Image assets
-│
-├── includes/
-│   ├── config.php               # Project base configuration and BASE_URL setup
-│   ├── db.php                   # Database connection file
-│   ├── footer.php               # Reusable page footer component
-│   ├── head.php                 # HTML head element with CSS & icon dependencies
-│   └── header.php               # Dynamic top navigation header
-│
-├── patient/
-│   └── patient_dashboard.php    # Patient dashboard for tracking personal appointments
-│
-├── style/
-│   ├── appointment.css          # Styles for booking form
-│   ├── dashboard.css            # Styles for admin & patient dashboards
-│   ├── my-appointment.css       # Styles for appointment history table
-│   └── style.css                # Primary stylesheet
-│
-├── appointment.php              # Appointment booking page
-├── index.php                    # Landing home page
-├── login.php                    # User/Admin authentication login
-├── logout.php                   # Session termination script
-├── my-appointment.php           # Patient appointment history
-├── register.php                 # Patient account registration page
-├── success.php                  # Appointment booking success confirmation
-└── README.md                    # Project documentation
-
 
 ---
 
